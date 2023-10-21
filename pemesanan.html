@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pemesanan</title>
+ 
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">HOME</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="beranda.html">Beranda <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pilihan kendaraan.html">Pilihan Kendaraan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pemesanan.html">Pemesanan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="wisata di makassar.html">Rekomendasi Wisata Makassar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about us.html">Kontak Kami</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   
+    <div class="container mt-4">
+        <form>
+            <h1 class="text-center">SILAHKAN ISI DATA DI BAWAH UNTUK PEMESANAN</h1>
+            <div class="form-group">
+                <label for="nama_lengkap">Nama Lengkap:</label>
+                <input type="text" class="form-control" id="nama_lengkap" name="nama_lengkap" placeholder="Nama Lengkap" required>
+            </div>
+            <div class="form-group">
+                <label>Jenis Kelamin:</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="jenis_kelamin" id="laki_laki" value="L" checked>
+                    <label class="form-check-label" for="laki_laki">LAKI-LAKI</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="jenis_kelamin" id="perempuan" value="P">
+                    <label class="form-check-label" for="perempuan">PEREMPUAN</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="alamat">Alamat Tinggal:</label>
+                <input type="text" class="form-control" id="alamat" name="alamat" placeholder="Alamat Tinggal" required>
+            </div>
+            <div class="form-group">
+                <label for="no_handphone">No. Handphone:</label>
+                <input type="text" class="form-control" id="no_handphone" name="no_handphone" placeholder="No. Handphone" required>
+            </div>
+            <div class="form-group">
+                <label for="tanggal_pemesanan">Tanggal Pemesanan:</label>
+                <input type="date" class="form-control" id="tanggal_pemesanan" name="tanggal_pemesanan" required>
+            </div>
+            <div class="form-group">
+                <label for="tanggal_pengembalian">Tanggal Dikembalikan:</label>
+                <input type="date" class="form-control" id="tanggal_pengembalian" name="tanggal_pengembalian" required>
+            </div>
+            <div class="form-group">
+                <label for="jenis_kendaraan">Jenis Kendaraan:</label>
+                <select class="form-control" id="jenis_kendaraan" name="jenis_kendaraan">
+                    <option selected disabled>-= Pilih =-</option>
+                    <option value="TOYOTA AVANZA">TOYOTA AVANZA</option>
+                    <option value="SUZUKI ERTIGA">SUZUKI ERTIGA</option>
+                    <option value="DAIHATSU XENIA">DAIHATSU XENIA</option>
+                    <option value="TOYOTA FORTUNER">TOYOTA FORTUNER</option>
+                    <option value="MITSUBISHI PAJERO">MITSUBISHI PAJERO</option>
+                    <option value="IZUSU ELF">IZUSU ELF</option>
+                    <option value="TOYOTA HIACE">TOYOTA HIACE</option>
+                    <option value="TOYOTA NEW ALPHARD">TOYOTA NEW ALPHARD</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Pilihan Supir:</label><br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="supir" id="dengan_supir" value="y" checked>
+                    <label class="form-check-label" for="dengan_supir">Dengan Supir</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="supir" id="tanpa_supir" value="n">
+                    <label class="form-check-label" for="tanpa_supir">Tanpa Supir</label>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="jenis_pembayaran">Jenis Pembayaran:</label>
+                <select class="form-control" id="jenis_pembayaran" name="jenis_pembayaran">
+                    <option selected disabled>-= Pilih =-</option>
+                    <option value="BANK BRI">BANK BRI</option>
+                    <option value="BANK BNI">BANK BNI</option>
+                    <option value="DANA">DANA</option>
+                    <option value="TUNAI">TUNAI</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">PESAN SEKARANG</button>
+        </form>
+    </div>
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
